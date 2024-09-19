@@ -10,5 +10,9 @@ int main()
 	std::cout << "Enter i: ";
 	std::cin >> i;
 
-	std::cout << "Result in byte " << i << " is: " << (x & (1 << i)) << std::endl;
+	bool result = (x >> i) & 1;
+
+	std::cout << "Result in  byte " << i << ": " << result << std::endl; 
+
+	return 0;
 }
